@@ -1,0 +1,11 @@
+body{
+    background-color: red;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media screen and ( max-width:1024px) and (orientation: landscape) {
+    
+    body{
+        background-color: yellow;
+    }
+}

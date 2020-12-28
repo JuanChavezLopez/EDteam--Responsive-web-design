@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 4em;
+    border: 1px solid #000;
+    border-radius: .25em;
+    background: red;
+    color: white;
+    padding: 10px 30px;
+    margin: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+footer{
+    margin-top: auto;
+    background: #ddd;
+    padding: 1em;
+}
+
+.box{
+    background: red;
+    width: 50vmin;
+    height: 50vmin;
+}
+
+header{
+    background: red;
+    color: #fff;
+    text-align: center;
+    padding: 10vmin 0;
+}
