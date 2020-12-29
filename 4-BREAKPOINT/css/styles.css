@@ -1,0 +1,16 @@
+
+p {
+    background: yellow;
+    margin:.5em;
+    font-size: 1.5em;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    /* Esto es parecido al repeat-autofit, cuando llega a los 400px, se desborda en una nueva linea. */
+    flex: 1 1 400px;
+}

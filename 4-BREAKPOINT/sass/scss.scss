@@ -1,0 +1,30 @@
+
+
+/*MAYOR BREAKPINTS */
+$breakpoints: (
+    small: 0px,
+    medium: 640px,
+    large:1024px,
+    xlarge: 1200px,
+    xxlarge:1440px,
+);
+
+@mixin rwd($bp) {
+
+    @if map-has-key($breakpoints, $bp){
+        @media screen and (min-width: map-get($breakpoints, $bp)){
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: $bp){
+            @content
+        }
+    }
+}
+
+body {
+    background: red;
+    @include rwd(large) {
+        background: blue;
+    }
+}
