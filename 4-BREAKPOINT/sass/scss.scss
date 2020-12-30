@@ -1,5 +1,7 @@
 
 
+/* todo: MANEJAR  */
+
 /*MAYOR BREAKPINTS */
 $breakpoints: (
     small: 0px,
@@ -23,8 +25,14 @@ $breakpoints: (
 }
 
 body {
-    background: red;
+    background: yellow;
+
     @include rwd(large) {
         background: blue;
     }
+
+    @include rwd(30em) {
+        background: green;
+    }
+
 }

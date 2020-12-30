@@ -1,0 +1,40 @@
+
+// @mixin ratio ($w, $h){
+//     // height: 100px;
+//     display: grid;
+//     grid-template-columns: repeat($w, 1fr);
+//     grid-template-rows: repeat($h, 1fr);
+//     // background: red;
+//     position: relative;
+
+//     &::before{
+//         content: "hola";
+//         display: block;
+//         padding-bottom: 100%;
+//     }
+
+// }
+
+// .container{
+//     width: 75%;
+//     max-width: 960px;
+//     min-width: 520px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// img {
+//     width: 100%;
+//     max-width: 100%;
+//     height: auto;
+// }
+
+// .img {
+//     @include ratio(16, 9);
+//     background: red;
+//     background: url(../img/imagen1.jpg) center /cover;
+
+//     @media screen and (min-width: 640px) {
+//         background: url(../img/imagen2.jpg) center / cover;
+//     }
+// }
