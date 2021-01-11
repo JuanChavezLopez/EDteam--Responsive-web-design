@@ -1,0 +1,22 @@
+.main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+
+    &__link{
+        color: $text-color;
+        margin-left: 1rem;
+    }
+}
+
+.main-nav{
+    display: none;
+}
+
+.main-menu-togle{
+    width: 1.6rem;
+    height: 2rem;
+    background-color: red;
+}

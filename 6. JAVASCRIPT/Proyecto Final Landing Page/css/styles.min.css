@@ -1,0 +1,2 @@
+*,*::before,*::after{box-sizing:border-box}body{margin:0}a{text-decoration:none}img{max-width:100%}.l-container{max-width:1200px;padding-left:1em;padding-right:1rem;display:flex;margin-right:auto;margin-left:auto}.main-header{height:4rem;border-bottom:1px solid #ccc}.main-header__block{justify-content:space-between;align-items:center}.main-menu{margin-top:0;margin-bottom:0;margin-left:0;list-style:none;display:flex}
+/*# sourceMappingURL=styles.min.css.map */
