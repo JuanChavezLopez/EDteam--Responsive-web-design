@@ -1,0 +1,2 @@
+:root{--name: 'Alexis'}h1{font-size:6rem;padding:3rem;font-weight:900}h1::after{content:var(--name)}
+/*# sourceMappingURL=styles.min.css.map */
