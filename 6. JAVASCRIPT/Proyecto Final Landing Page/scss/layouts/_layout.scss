@@ -5,4 +5,56 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.l-section{
+    margin-bottom: 2rem;
+    position: relative;
+    @include from (1) {
+        margin-bottom: 4rem;
+    }
+
+    &--diagonal{
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            height: 100%;
+            background: #f0f0f0;
+            z-index: var(--z-back);
+            transform: skewY(-1deg) scaleY(1.025);
+
+            @include from(l){
+                transform: skewY(-2deg) scaleY(1.05);
+            }
+
+        }
+    }
+}
+
+// ANCHOS PERSONALIZADOS
+@for $i from 1 through 20 {
+    .s-#{$i*5} {
+        width: #{$i * 5%};
+    }
+}
+
+// a partir de este breakpoint
+@include from (l){
+    @for $i from 1 through 20 {
+        .l-#{$i*5} {
+            width: #{$i * 5%};
+        }
+    }
+}
+
+.center-block{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-content{
+    text-align: center;
 }

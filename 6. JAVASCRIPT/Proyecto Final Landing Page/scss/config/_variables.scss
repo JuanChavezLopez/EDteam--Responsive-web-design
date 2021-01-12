@@ -5,6 +5,44 @@ $text-color: #53575A;
 $dark-color: #141618;
 $header-hight: 4rem;
 
+// breakpoints
+
 $breakpoints:(
     l: 960px
-)
+);
+
+// PALETA DE COLORES
+
+:root {
+    --color-first: #007BDF;
+    --color-border: #DFE0E0;
+    --color-alert: #FF3C32;
+}
+
+// VARIABLES DE APILAMIENTO (z-index)
+
+:root {
+    --z-back:-10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+// VARIABLES DE TIPOGRAFIA
+
+:root{
+    --h1-font-size:2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --body-font-size: .9rem;
+    --small-font-size: .75rem;
+
+    @include from (l){
+        --h1-font-size:2.5rem;
+        --h2-font-size : 2.75rem;
+        --h3-font-size: 1.5rem;
+        --body-font-size: 1rem;
+        --small-font-size: .8rem;
+    }
+}
